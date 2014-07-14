@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Decision Game</title>
+        
+	<script src="/static/lib/jquery-min.js" type="text/javascript"></script>
+        <script src="/static/lib/underscore-min.js" type="text/javascript"></script>
+        <script src="/static/lib/backbone-min.js" type="text/javascript"></script>
+	<script src="/static/lib/d3.v3.min.js" type="text/javascript"> </script>
+
+        <!-- Load the jspsych library and plugins -->
+        <script src="/static/js/jspsych/jspsych.js" type="text/javascript"></script>
+        <script src="/static/js/jspsych/plugins/jspsych-text.js" type="text/javascript"></script>
+	<script src="/static/js/jspsych/plugins/face_v5.js" type="text/javascript"></script>
+	<script src="/static/js/jspsych/plugins/jspsych-html.js" type="text/javascript"></script>
+       <script type="text/javascript">
+            // These fields provided by the psiTurk Server
+            var uniqueId = "{{ uniqueId }}"; // a unique string identifying the worker/task
+            var adServerLoc = "{{ adServerLoc }}"; // the location of your ad (so you can send user back at end of experiment)
+        </script>
+	<!-- utils.js and psiturk.js provide the basic psiturk functionality -->
+        <script src="/static/js/psiturk.js" type="text/javascript"></script>
+
+        <!-- Load the stylesheet -->
+        <link href="/static/CSS/experiment.css" type="text/css" rel="stylesheet"></link>
+    </head>
+
+    <body>
+        <div id="jspsych_target"></div>
+    </body>
+
+    <script type="text/javascript">
+	/* load psiturk */
+        var psiturk = PsiTurk(uniqueId, adServerLoc);
+		var check_consent = function(elem) {
+            if ($('#consent_checkbox').is(':checked')) {
+                return true;
+            }
+            else {
+                alert("If you wish to participate, you must check the box next to the statement 'I agree to participate in this study.'");
+                return false;
+            }
+        };
+  // Experiment parameters
+        // Experiment Instructions
+        var welcome_message = "<div id='instructions'><p>Welcome to the " +
+            "experiment. Please press enter to begin.</p></div>";
+
+        var instructions = "<div id='instructions'><p>You will see a " +
+            "series of faces that belong to one of two groups, " +
+            "Adoks or Lorks. You will then be asked to act friendly or " +
+            "hostile to the face you are shown. Adoks are typically nice " +
+            "while Lorks are typically mean. You should be friendly to faces " +
+			"you think are nice, and defensive to faces you believe are mean. " +
+            "You will press the 'A' key to be friendly and 'L' key to be mean." +
+			"</p><p>Please press enter to start.</p>";
+
+        var debrief = "<div id='instructions'><p>Thank you for " +
+            "participating!  Press enter to see the data.</p></div>";
+
+		// Load stimuli into array for later calling
+		var face = ["/static/img/r1.BMP","/static/img/r2.BMP","/static/img/r3.BMP","/static/img/r4.BMP","/static/img/r5.BMP","/static/img/r6.BMP","/static/img/r7.BMP","/static/img/r8.BMP","/static/img/r9.BMP","/static/img/r10.BMP","/static/img/r11.BMP","/static/img/r12.BMP","/static/img/r13.BMP","/static/img/r14.BMP","/static/img/r15.BMP","/static/img/r16.BMP","/static/img/r17.BMP","/static/img/n1.BMP","/static/img/n2.BMP","/static/img/n3.BMP","/static/img/n4.BMP","/static/img/n5.BMP","/static/img/n6.BMP","/static/img/n7.BMP","/static/img/n8.BMP","/static/img/n9.BMP","/static/img/n10.BMP","/static/img/n11.BMP","/static/img/n12.BMP","/static/img/n13.BMP","/static/img/n14.BMP","/static/img/n15.BMP","/static/img/n16.BMP","/static/img/n17.BMP"];//array of image locations
+		// create a function that takes face and shuffles 6 times and creates 6 columns of randomly ordered face stimuli
+		var fb =["/static/img/sorry.BMP","/static/img/AcDc.BMP", "/static/img/AcFc.BMP", "/static/img/AcDc.BMP", "/static/img/LcFc.BMP", "/static/img/AwDc.BMP", "/static/img/AwFc.BMP", "/static/img/LwDc.BMP", "/static/img/LwDc.BMP","/static/img/AcDw.BMP", "/static/img/AcFw.BMP", "/static/img/LcDw.BMP", "/static/img/LcDw.BMP", "/static/img/AwDw.BMP", "/static/img/AwFw.BMP", "/static/img/LwDw.BMP", "/static/img/LwDw.BMP","/static/img/ADc.BMP","/static/img/AFc.BMP","/static/img/ADw.BMP","/static/img/AFw.BMP","/static/img/LDc.BMP","/static/img/LFc.BMP","/static/img/LDw.BMP","/static/img/LFw.BMP","/static/img/sorry.BMP"];
+
+		//Randomize the stimuli for the experiment 1 block only!! (i.e., 1 CD 1 XD and 1 D)
+		function randomize_stimuli(array1){// function to randomize stimuli
+			var matrix = [];
+			for(var i=0; i<array1.length; i++) {// create matrix to store the stimuli for each condition
+				matrix[i] = new Array(3);
+					for(var j=0; j<3; j++)
+						matrix[i][j] = array1[i];
+			}
+			// Generating Random Order for Stimuli
+			//Fisher-Yates Shuffle copied from bost.ocks.org/mike/shuffle ***********(Academic paper)**************
+			for(var z=0;z<3;z++){
+				var m = array1.length, t, d;
+				// While there remain elements to shuffle…
+				while (m) {
+				// Pick a remaining element…
+				d = Math.floor(Math.random() * m--);
+				// And swap it with the current element.
+				t = matrix[m][z];
+				matrix[m][z] = matrix[d][z];
+				matrix[d][z] = t;
+				}				
+			}
+		return matrix;
+		}
+		
+		var stim_block1=randomize_stimuli(face);//uses the above function to create a 3x34 matrix containing a random order of stim for block 1
+		var stim_block2=randomize_stimuli(face);//same for block 2
+		
+		function setAttribtues(stimuli){//set stimuli attributes based on the input of stimuli
+		/* Key for the returned matrix 
+		CD
+			[any][0] === Face Shape
+			[any][1] === Nat Assign
+			[any][2] === Disp Assign
+		XD
+			[any][3] === Face Shape
+			[any][4] === Nat Assign
+			[any][5] === Disp Assign
+		D
+			[any][6] === Face Shape
+			[any][7] === Nat Assign
+			[any][8] === Disp Assign
+		*/
+			var matrix = [];
+			var prob = 0;
+			var xd = 0;
+			var d = 0;
+			var n = 0;
+			var prob_nat = 6;//change probability of nat assignment, currently 60% chance of R being Adok, and 60% chance of Narrow being lork
+			var prob_disp = 7;// change disp assignment. Currently 70% chance of Adok being Fr and 70% chance of lork being Aggressive
+			for(var z=0; z<102; z++) {// create matrix to store the stimuli for each condition
+					matrix[z] = new Array(4);
+				}
+			for(j=0;j<3;j++){ 
+				for(var i=0; i<stimuli.length; i++) {
+					//number of columns in stim array (can write function to make dynamic)
+					if(stimuli[i][j].charAt(12)=="r"){//If stimuli is a round face
+						matrix[n][0]="round";
+						if(n<34){matrix[n][3]='CD';}
+						else if(n>=34){
+							if(xd<34 && d<34){matrix[n][3]=Math.floor(Math.random() * ((3-2)+1) + 2);}// randomly either 2 or 3 This may not be the best way to randomize
+								if(matrix[n][3]==2){matrix[n][3]='XD';xd+=1;}//Change random number to trial indicator
+								else if(matrix[n][3]==3){matrix[n][3]='D';d+=1;}
+							else if(xd>=34){matrix[n][3]='D';}
+							else if(d>=34){matrix[n][3]='XD';}
+						}
+						prob = Math.floor((Math.random() * 10) + 1);//random number between 1 and 10
+						if(prob<=prob_nat){
+							matrix[n][1]="Adok";
+							prob = Math.floor((Math.random() * 10) + 1);
+							if(prob<=prob_disp){//assign disposition
+								matrix[n][2]="Fr";
+							}else if (prob>prob_disp){//basically 1-prob_adok_friendly
+								matrix[n][2]="Ag";
+							}
+						}
+						else if(prob>prob_nat){
+							matrix[n][1]="Lork";
+							prob = Math.floor((Math.random() * 10) + 1);
+							if(prob<=prob_disp){//assign disposition
+								matrix[n][2]="Ag";
+							}else if (prob>prob_disp){
+								matrix[n][2]="Fr";
+							}	
+						}
+					}
+					else if(stimuli[i][j].charAt(12)=="n"){//if stimuli is a narrow face
+						matrix[n][0]="narrow";
+						if(n<34){matrix[n][3]='CD';}
+						else if(n>=34){
+							if(xd<34 && d<34){matrix[n][3]=Math.floor(Math.random() * ((3-2)+1) + 2);}// randomly either 2 or 3
+								if(matrix[n][3]==2){matrix[n][3]='XD';xd+=1;}
+								else if(matrix[n][3]==3){matrix[n][3]='D';d+=1;}
+							else if(xd>=34){matrix[n][3]='D';}
+							else if(d>=34){matrix[n][3]='XD';}
+						}
+						prob = Math.floor((Math.random()*10)+1);
+						if (prob<=prob_nat){
+							matrix[n][1]="Lork";
+							prob = Math.floor((Math.random() * 10) + 1);
+							if(prob<=prob_disp){
+								matrix[n][2]="Ag";
+							}else if(prob>prob_disp){
+								matrix[n][2]= "Fr";
+							}
+						} else if (prob>prob_nat){
+							matrix[n][1]="Adok";
+							prob = Math.floor((Math.random() * 10) + 1);
+							if(prob<=prob_disp){
+								matrix[n][2]="Fr";
+							}else if(prob>prob_disp){
+								matrix[n][2]= "Ag";
+							}
+						}
+					}
+				matrix[n][4]=stimuli[i][j];
+				n+=1;
+				}
+			}
+		return matrix;
+		}//close the function
+		
+		var attributes_block1 = setAttribtues(stim_block1);//can incorporate the randomize function if I have time
+		var attributes_block2 = setAttribtues(stim_block2);
+		
+		function progress(i){//needs work
+			//var div = document.getElementById("jspsych_target").innerHTML; 
+			$('#jspsych_target').html('Please wait while the experiment materials are prepared.<br>'+'Step '+i+' out of 58 completed.');
+			}
+		
+		function done(){//needs work
+			$('#jspsych_target').html('Thank you for your patience. All test materials have been loaded.<br> Please press enter to continue.');
+		};
+		
+		jsPsych.preloadImages(face.concat(fb),done,progress);//preload images to browser for better runtime during experiment
+		// Define experiment blocks
+		var prep = {
+                type: "text",
+                text: [" ",welcome_message],
+                timing_post_trial: 1500//amount of time after the instructions before the experiment
+            };
+		var consent_block = {
+				type:'html', 
+				pages: [{url: 'consent.html', cont_btn: "start", check_fn: check_consent}]
+				};
+				
+       		var instruction_block = {
+                type: "text",
+                text: [instructions],
+                timing_post_trial: 1500//amount of time after the instructions before the experiment
+            };
+
+		var CD_block = {
+                type: "face-exp",
+                stimuli: stim_block1,
+				prompt1: '<p>Press "A" to categorize the face as an Adok. Press "L" to categorize the face as a Lork.</p>',
+				prompt2: '<p>Press "A" to act friendly towards the face you saw. Press "L" to act defensively to towards the face you saw.</p>',
+				prompt3: '<p>The Face you just saw was a </p>',		//the script will add whether it was a lork or adok
+				attributes:attributes_block1
+            };
+
+        var debrief_block = {
+                type: "text",
+                text: [debrief]
+            };
+		
+        jsPsych.init({
+            display_element: $('#jspsych_target'),
+            experiment_structure: [prep,instruction_block,CD_block,debrief_block],
+            on_finish: function() {
+                psiturk.saveData();
+                psiturk.completeHIT();
+            },
+            on_data_update: function() {
+                psiturk.recordTrialData(attributes_block1);
+            }
+        });
+    </script>
+</html>

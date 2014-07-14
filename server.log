@@ -1,0 +1,1143 @@
+2014-07-08 16:32:08,576 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:32:08,730 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:32:08,830 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:32:08,952 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:32:09,119 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:32:09,148 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:32:09,183 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:32:09,189 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:32:09,235 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:36:31,632 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:36:31,688 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:36:31,981 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:36:32,126 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:36:32,135 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:36:32,209 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:36:32,212 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:36:32,229 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 16:36:32,231 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-08 17:22:31,348 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:22:54,114 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:23:16,885 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:23:39,658 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:24:02,421 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:24:25,184 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:24:47,950 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:25:10,716 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:25:33,480 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:25:56,244 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:26:19,008 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:26:41,771 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:27:04,533 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:27:27,296 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:27:50,060 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:28:12,827 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:28:35,598 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:28:58,361 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:29:21,126 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:29:43,891 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:30:06,653 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:30:29,417 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:30:52,182 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:31:14,958 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:31:37,723 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:32:00,484 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:32:23,253 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:32:46,018 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:33:08,782 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:33:31,545 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:33:54,309 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:34:17,075 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:34:39,838 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-08 17:35:02,603 Exception on /img/sorry.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/sorry.BMP
+2014-07-09 09:15:31,109 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:15:31,234 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:15:31,344 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:15:31,377 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:15:31,415 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:15:31,489 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:15:31,500 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:15:31,545 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:15:31,584 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:40:49,918 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:40:49,932 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:40:50,191 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:40:50,193 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:40:50,296 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:40:50,386 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:40:50,450 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:40:50,487 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 09:40:50,502 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 10:17:27,914 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 10:17:27,914 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 10:17:27,985 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 10:17:28,080 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 10:17:28,123 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 10:17:28,178 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 10:17:28,193 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 10:17:28,202 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 10:17:28,215 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 10:17:52,332 Exception on /img/AwDw.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/AwDw.BMP
+2014-07-09 10:34:01,618 Exception on /img/AwDw.BMP [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/psiturk/experiment.py", line 558, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: img/AwDw.BMP
+2014-07-09 11:19:45,484 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 11:19:45,720 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 11:19:46,043 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 11:19:46,198 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 11:19:46,291 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 11:19:46,378 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 11:19:46,416 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 11:19:46,441 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 11:19:46,462 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:47:25,429 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:47:25,435 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:47:25,438 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:47:25,438 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:47:25,503 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:47:25,540 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:47:25,616 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:47:25,624 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:47:25,629 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:53:25,015 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:53:25,051 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:53:25,180 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:53:25,317 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:53:25,370 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:53:25,397 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:53:25,479 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:53:25,498 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:53:25,547 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:54:47,924 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:54:48,059 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:54:48,136 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:54:48,173 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:54:48,196 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:54:48,233 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:54:48,239 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:54:48,240 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 12:54:48,249 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:04:45,369 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:04:45,435 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:04:45,584 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:04:45,605 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:04:45,782 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:04:45,795 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:04:45,914 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:04:45,936 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:04:45,975 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:07:53,585 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:07:53,644 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:07:53,812 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:07:53,816 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:07:53,903 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:07:54,092 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:07:54,097 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:07:54,118 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:07:54,137 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:30:06,736 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:30:06,755 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:30:06,922 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:30:06,991 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:30:07,175 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:30:07,228 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:30:07,263 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:30:07,269 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:30:07,288 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:36:51,339 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:36:51,581 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:36:51,603 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:36:51,756 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:36:51,773 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:36:51,923 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:36:51,937 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:36:51,956 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 13:36:51,981 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 16:27:33,573 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 16:27:34,057 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 16:27:34,370 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 16:27:34,403 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 16:27:34,425 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 16:27:34,456 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 16:27:34,483 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 16:27:34,577 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 16:27:34,583 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 17:38:37,430 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 17:38:38,235 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 17:38:38,384 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 17:38:38,435 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 17:38:38,437 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 17:38:38,522 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 17:38:38,579 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 17:38:38,592 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-09 17:38:38,629 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:38:44,328 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:38:44,328 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:38:44,403 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:38:44,600 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:38:44,638 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:38:44,654 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:38:44,670 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:38:44,680 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:38:44,712 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:53:18,718 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:53:18,865 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:53:19,062 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:53:19,098 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:53:19,286 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:53:19,329 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:53:19,349 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:53:19,390 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 10:53:19,409 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:05:02,200 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:05:02,725 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:05:02,842 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:05:02,846 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:05:02,950 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:05:02,992 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:05:02,997 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:05:03,033 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:05:03,043 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:24:22,074 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:24:22,307 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:24:22,654 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:24:22,742 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:24:22,773 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:24:22,775 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:24:22,858 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:24:22,879 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
+2014-07-14 11:24:22,886 /usr/local/lib/python2.7/dist-packages/psiturk/psiturk_js/psiturk.js
